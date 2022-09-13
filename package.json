@@ -1,6 +1,5 @@
 {
   "name": "invoice-app-front-end",
-  "type": "module",
   "version": "0.0.0",
   "private": true,
   "author": "yehudz <yehuda.zeytim@gmail.com>",
