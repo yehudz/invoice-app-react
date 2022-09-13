@@ -9,6 +9,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: './tsconfig.json',
+    React: 'readonly',
   },
   plugins: ['react'],
   rules: {
@@ -17,10 +18,11 @@ module.exports = {
     quotes: 'off',
     semi: 'off',
     'no-extra-semi': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
-};
+}
