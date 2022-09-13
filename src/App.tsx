@@ -1,8 +1,7 @@
 import './App.css'
 
 function App(): JSX.Element {
-  function test(): void {
-  }
+  function test(): void {}
   test()
   return (
     <>
