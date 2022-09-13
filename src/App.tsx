@@ -8,6 +8,13 @@ function App(): JSX.Element {
         w-screen
       "
     >
+      <h1 
+        className="
+          text-primary
+        "
+      >
+        App is loaded
+      </h1>
     </main>
   )
 }
