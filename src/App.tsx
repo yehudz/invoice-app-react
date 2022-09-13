@@ -5,7 +5,9 @@ function App(): JSX.Element {
   test()
   return (
     <>
-      <h1>Hello from eslint hell</h1>
+       <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
     </>
   )
 }
