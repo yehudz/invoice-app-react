@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function App(): JSX.Element {
-  return <></>;
+function App (): JSX.Element {
+  return <></>
 }
 
-export default App;
+export default App
