@@ -21,6 +21,6 @@ export default function ButtonContainer() {
   it('should be the Secondary button', ()=> {
     cy.viewport(768, 450)
     mount(<ButtonContainer />)
-    // cy.get('[data-cy="secondary-button"]')
-    // .should('include.text', 'Mark as Paid')
+    cy.get('[data-cy="secondary-button"]')
+    .should('include.text', 'Mark as Paid')
   })
