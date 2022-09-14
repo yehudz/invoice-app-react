@@ -41,6 +41,7 @@ function PrimaryButton() {
         />
       </div>
       <div 
+        id="button-text"
         className="
           flex
           text 
@@ -53,11 +54,11 @@ function PrimaryButton() {
         <span>
           New
         </span>
+        &nbsp;
         <span
           className="
             hidden
             md:block
-            ml-1
           "
         >Invoice</span>
       </div>

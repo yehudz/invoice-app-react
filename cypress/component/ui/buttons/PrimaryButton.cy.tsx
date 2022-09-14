@@ -1,7 +1,5 @@
 import { mount } from 'cypress/react';
 import * as React from 'react';
-import '../../../../build.css';
-import '../../../../dist/assets/index.b9c842a4.css';
 import PrimaryButton from '../../../../src/components/ui/buttons/PrimaryButton';
 
 export default function ButtonContainer() {
@@ -19,11 +17,14 @@ export default function ButtonContainer() {
     </div>
   )
 }
-describe('Mobile button', ()=> {
-  beforeEach(()=> {
-    cy.viewport(350, 450)
-  })
+
   it('Mobile button', ()=> {
+    cy.viewport(350, 450)
     mount(<ButtonContainer />)
+    cy.get('#button-text').should('include.text', 'New')
   })
-})
+  it('Tablet button', ()=> {
+    cy.viewport(768, 450)
+    mount(<ButtonContainer />)
+    cy.get('#button-text').should('include.text', 'Invoice')
+  })
