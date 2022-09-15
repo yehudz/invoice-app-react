@@ -1,0 +1,29 @@
+export default function GoBackButton() {
+  return(
+    <div
+      data-cy="go-back-button"
+      className="
+        flex
+        flex-row
+        items-center
+        cursor-pointer
+        hover:opacity-80
+        dark:hover:opacity-80
+      "
+    >
+      <img 
+        src="/assets/icon-arrow-left.svg"
+        className="mr-3"
+      />
+      <span
+        className="
+          text-black
+          text-[12px]
+          dark:text-white
+        "
+      >
+        Go Back
+      </span>
+    </div>
+  )
+}
