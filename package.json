@@ -12,12 +12,13 @@
     "npm": "please-use-yarn"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint ./src/**/*.tsx",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "cypress run --component && cypress run"
   },
   "dependencies": {
     "react": "^18.2.0",

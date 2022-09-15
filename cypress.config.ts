@@ -5,7 +5,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'http://127.0.0.1:5173',
+    baseUrl: 'http://127.0.0.1:3000',
     screenshotsFolder: false,
     video: false
   },
@@ -15,5 +15,7 @@ export default defineConfig({
       framework: "react",
       bundler: "vite",
     },
+    screenshotsFolder: false,
+    video: false
   },
 });
